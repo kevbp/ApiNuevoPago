@@ -13,11 +13,12 @@ public class PacienteDTO {
     private double tal;
     private int eda;
     private String est;
+    private Long idEmp;
 
     public PacienteDTO() {
     }
 
-    public PacienteDTO(Long id, String nom, int dni, double pes, double tal, int eda, String est) {
+    public PacienteDTO(Long id, String nom, int dni, double pes, double tal, int eda, String est, Long idEmp) {
         this.id = id;
         this.nom = nom;
         this.dni = dni;
@@ -25,6 +26,7 @@ public class PacienteDTO {
         this.tal = tal;
         this.eda = eda;
         this.est = est;
+        this.idEmp = idEmp;
     }
 
     public Long getId() {
@@ -81,6 +83,14 @@ public class PacienteDTO {
 
     public void setEst(String est) {
         this.est = est;
+    }
+
+    public Long getIdEmp() {
+        return idEmp;
+    }
+
+    public void setIdEmp(Long idEmp) {
+        this.idEmp = idEmp;
     }
 
     
